@@ -337,7 +337,7 @@ define sssd::domain (
   Optional[String]                                                         $full_name_format                              = undef,
   Optional[Enum['ipv4_first', 'ipv4_only', 'ipv6_first', 'ipv6_only']]     $lookup_family_order                           = undef,
   Optional[Integer[0]]                                                     $dns_resolver_timeout                          = undef,
-  Optional[Bodgitlib::Domain]                                              $dns_discovery_domain                          = undef,
+  Optional[String]                                                         $dns_discovery_domain                          = undef,
   Optional[Integer[0]]                                                     $override_gid                                  = undef,
   Optional[Variant[Boolean, Enum['preserving']]]                           $case_sensitive                                = undef,
   Optional[Array[SSSD::Subdomain::Inherit, 1]]                             $subdomain_inherit                             = undef,
